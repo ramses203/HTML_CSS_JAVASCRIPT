@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="utf-8">
+<title> </title>
+
+</head>
+<body>
+    <form action="insert.jsp">
+        이름: <input type="text" name = "name"><br>
+        나이: <input type="text" name = "age"><br><br>
+
+        비밀번호: <input type="password" name="pwd"><br>
+        개인정보: <input type="radio" name="info" checked value="공개"> 공개 <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="info" value="비공개"> 비공개</input>
+        <br><br>
+        취미: <input type="checkbox" name="hobby" value="등산"> 등산
+              <input type="checkbox" name="hobby2" value="독서" checked>독서
+              <input type="checkbox" name="hobby3" value="영화감상"> 영화감상
+              <input type="checkbox" name="hobby4" value="음악감상"> 음악감상<br><br>
+
+        이메일: <input type="text">@
+                <select>
+                    <option>선택</option>
+                    <option>naver.com</option>
+                    <option>hanmail.com</option>
+                    <option>gamail.com</option>
+                    <option>직접입력</option>
+                </select><br><br>
+        자기소개: <br>
+        <textarea rows="5" cols="50" name="contents"></textarea><br>
+        파일첨부 : <input type="file">* 2MB까지 전송가능 <br><br>
+
+        <button type="button">검색</button>
+        <button type="submit">전송(확인)</button>
+        <button type="reset">다시쓰기</button>
+    </form>
+
+    
+</body>
+
+</html>
