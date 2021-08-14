@@ -1,0 +1,60 @@
+
+DNS (domain Name System) : HostName 을IP Address 로 변환하는 서버.
+
+- HostName : 네트워크의 장치이름(컴퓨터이름, 프린터, 라우터, 스위치)
+FQDN(전체 컴퓨터 이름) = 호스트 이름+ 도메인 이름(회사명)
+www.naver.com ====> IP Address
+------------------DNS
+호스트 + 도메인
+
+1.host(c:\windows\system32\drivers\etc\host)
+--자신의 시스템에만 작동
+2.DNS서버
+--글로벌하게 작동
+--도메인 구매후 DNS Server 셋팅(www.internic.org)
+   국내 도메인구매(www.doregi.com)
+
+서버호스팅 : DataCenter 의 서버 장비를 통째로 빌림 (월 7만원~ )
+
+FTP Server: 파일을 전송, TCP21,
+	Web Server는 FTP Server 와 연동.
+
+Web Site 생성
+	-하나의 IP Address 의 같은 포트의 사이트는 여러개 만들수 없다. 
+	예외 - 호스트 이름을 사용: 해당 호스트 이름에 대한 DNS 서버 구성이 이루어져야 한다.   
+
+Windows IIS 웹서버 설치 / 구성,(30퍼 점유율)
+Linux APM 설치:
+	A : Apache Web Server (40퍼 점유율)
+	P : PHP
+	M : Maria DB <==MySQL(Oracle) 
+Apache Web Server
+	-- 웹서버 설정 파일: /etc/httpd/conf/httpd.conf
+	122 DocumentRoot "/var/www/html"   <<<===홈폴더를 뜻한다.
+	167 DirectoryIndex index.html           <<<== 기본문서를 뜻한다. 
+
+방화벽:
+	firewall-cmd --add-port=80/tcp --permanent
+	firewall-cmd --reload
+
+ipconfig /dispalydns (hosts)
+ipconfig /flushdns
+
+호스트 이름을 사용한 웹사이트
+ --해당 호스트 이름이 IP Address 로 변환 되었을때 사용(hosts, DNS)
+ --IP Address로 접근 불가, 호스트 이름으로만 접근
+ --같은 IP, 같은 Port를 사용한 웹사이트를 여러개 생성가능
+
+특수 문자 심볼 넣기 
+ㅁ: ※◎☆◈
+ㅂ: √
+
+VB Code 에서 Live Server 설치(확장프로그램) ,TCP 5500
+ -VB Code 에서 지원해주는 Web Server
+ -http://127.0.0.1:5500 <===웹서버를 생성,
+
+2. html css support
+ - css를 수정을 하면 바로 html 에 적용
+
+3. Korea language Pack for VBcode
+ - 한글 적용
