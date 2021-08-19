@@ -1,142 +1,216 @@
 <!DOCTYPE html>
-    <meta charset= "utf-8">
-   <html>    
-      <head>      
-         <title>HTMLFont size</title>    
-         <style type="text/css">
+<meta charset="utf-8">
+<html>
 
-            .font { font-size: 50px; color:black; font-family: 바탕; }
-            
-            u {
-            text-decoration : none;
-            border-bottom : 10px solid rgb(172, 167, 167);
-            padding-bottom : 10px;
-            }
+<head>
+    <title>HTMLFont size</title>
+    <style type="text/css">
+        .font {
+            font-size: 50px;
+            color: black;
+            font-family: 바탕;
+        }
 
-            table , td{
-               border: solid 2px black;
-               border-color: black;
-               padding: 8px;
-               border-collapse: collapse;
-               text-align: center;
-               
-               }
-            table{
-                width: 700px;
-                text-al
-            }
-            
-           
-               
-        </style>
-            <center>
-            <font class="font_underline">
+        u {
+            text-decoration: none;
+            border-bottom: 10px solid rgb(172, 167, 167);
+            padding-bottom: 10px;
+        }
+
+        table,
+        td,
+        tr {
+            border: solid 1px black;
+            border-color: black;
+            padding: 8px;
+            border-collapse: collapse;
+            text-align: center;
+            table-layout: fixed;
+
+        }
+
+        table {
+            width: 700px;
+        }
+
+        #cir {
+            font-size: .8em;
+            width: 1em;
+            border-radius: 3em;
+            padding: .1em .2em;
+            line-height: 1.25em;
+            border: 1px solid #333;
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <center>
+        <font class="font_underline">
             <u><span class="font"> &nbsp이&nbsp&nbsp&nbsp력&nbsp&nbsp&nbsp서&nbsp <br></span></u>
-            </font>
-            </center>
-            <span style="line-height:50%"><br></span>
-            
-        
-      </head>    
-      <body>
-        <center>
-        <table>
-        <tr>
-        <td colspan="3"; rowspan="4">사&nbsp&nbsp&nbsp&nbsp&nbsp진<br><br>(3.5cmx4.5cm)</td><td colspan="2"; rowspan="2">성명</td><td colspan="2">한글</td><td colspan="3">ㅇ</td><td colspan="3">생 년 월 일</td><td colspan="3">ㅇ</td>
-            </tr>
-            <tr>
-            <td colspan="2">한자</td><td colspan="3">ㅇ</td><td colspan="3">만 나이</td><td colspan="3">ㅇ</td>
-            </tr>
-            <tr>
-                <td colspan="4">주 소</td><td colspan="9">ㅇ</td>
-                </tr>
-                <tr>
-                    <td colspan="4">연락처</td><td colspan="9"; style="text-align: left;">집/핸드폰 : </td>
-                    </tr>
-                    <tr><!--5-->
-                        <td rowspan="2">병<br>역</td><td colspan="5">복무기간</td><td colspan="2">군별</td><td colspan="2">계급</td><td colspan="2">병과</td><td colspan="4">면제사유</td>
-                        </tr>
-                        <tr>
-                            <td colspan="5">ㅇ</td><td colspan="2">ㅇ</td><td colspan="2">ㅇ</td><td colspan="2">ㅇ</td><td colspan="4">ㅇ</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="4">최<br>종<br>학<br>력</td><td colspan="5">기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 간</td><td colspan="6">학&nbsp;&nbsp;교&nbsp;&nbsp;명</td><td colspan="4">전&nbsp;&nbsp;&nbsp;공&nbsp;(학&nbsp;위)</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="5">~</td><td colspan="6">ㅇ</td><td colspan="4">ㅇ</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="5">~</td><td colspan="6">ㅇ</td><td colspan="4">ㅇ</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5"></td><td colspan="6">ㅇ</td><td colspan="4">ㅇ</td>
-                                            </tr>
-                                            <tr>
-                                                <td rowspan="6"><br><br>경<br>력<br><br></td><td colspan="5">기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 간</td><td colspan="4">근무처</td><td colspan="2">직위(급)</td><td colspan="4">업무내용</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="5">~</td><td colspan="4">ㅇ</td><td colspan="2">ㅇ</td><td colspan="4">ㅇ</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="5">~</td><td colspan="4">ㅇ</td><td colspan="2">ㅇ</td><td colspan="4">ㅇ</td>
-                                                        </tr>
-                                                        <tr>
-                                                           <td colspan="5">~</td><td colspan="4">ㅇ</td><td colspan="2">ㅇ</td><td colspan="4">ㅇ</td>
-                                                            </tr>
-                                                            <tr>
-                                                               <td colspan="5">~</td><td colspan="4">ㅇ</td><td colspan="2">ㅇ</td><td colspan="4">ㅇ</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td colspan="5">~</td><td colspan="4">ㅇ</td><td colspan="2">ㅇ</td><td colspan="4">ㅇ</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td rowspan="5"><br><br>자<br>격<br>증<br><br></td><td colspan="5">취득년월일</td><td colspan="6">자격,면허명</td><td colspan="4">시행처</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td colspan="5">ㅇ</td><td colspan="6">ㅇ</td><td colspan="4">ㅇ</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td colspan="5">ㅇ</td><td colspan="6">ㅇ</td><td colspan="4">ㅇ</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td colspan="5">ㅇ</td><td colspan="6">ㅇ</td><td colspan="4">ㅇ</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td >ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td><td>ㅇ</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td colspan="16" rowspan="4";>본인은 아래 기재내용이 사실과 다름이 없을을 확인하며, 허위 기재 사실이 발견될 경우<br>
-                                                                                            불합격 등 어떤 처분에도 일체의 이의를 제기하기 않겠습니다. <br><br>
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            년&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            월&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            일<br><br>
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            성&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp명:                                                                                                                                                 
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 인</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                               
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                   
-                                                                                                    </tr>
-                                                                                                    <tr>
-                                                                                                       
-                                                                                                        </tr>
+        </font>
+    </center>
+    <span style="line-height:50%;"><br></span>
 
-            
+    <center>
+        <table>
+            <tr>
+                <td colspan="3" ; rowspan="4" ; style="word-spacing: 20px;">사 진<br><br>(3.5cmx4.5cm)</td>
+                <td colspan="2" ; rowspan="2">성 명</td>
+                <td colspan="2">한&nbsp;글</td>
+                <td colspan="3">&nbsp;</td>
+                <td colspan="3">생 년 월 일</td>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2">한&nbsp;자</td>
+                <td colspan="3">&nbsp;</td>
+                <td colspan="3">만 나이</td>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="4" ; style="word-spacing: 30px;">주 소</td>
+                <td colspan="9">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="4" ; style="word-spacing: 5px;">연 락 처</td>
+                <td colspan="9" ; style="text-align: left;">&nbsp;집/핸드폰 : </td>
+            </tr>
+            <tr>
+                <!--5-->
+                <td rowspan="2" ; style="background-color: rgb(219, 230, 247); border-right-width: 3px;">병<br>역</td>
+                <td colspan="5" ; style="word-spacing: 5px;">복 무 기 간</td>
+                <td colspan="2">군&nbsp;별</td>
+                <td colspan="2">계&nbsp;급</td>
+                <td colspan="2">병&nbsp;과</td>
+                <td colspan="4">면제사유</td>
+            </tr>
+            <tr>
+                <td colspan="5">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td rowspan="4" ; style="background-color: rgb(219, 230, 247); border-right-width: 3px;">
+                    최<br>종<br>학<br>력</td>
+                <td colspan="5" ; style="word-spacing: 40px;">기 간</td>
+                <td colspan="6" ; style="word-spacing: 20px;">학 교 명</td>
+                <td colspan="4" ; style="word-spacing: 5px;">전 공 (학 위)</td>
+            </tr>
+            <tr>
+                <td colspan="5">~</td>
+                <td colspan="6">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5">~</td>
+                <td colspan="6">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+                <td colspan="6">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td rowspan="6" ; style="background-color: rgb(219, 230, 247); border-right-width: 3px;">
+                    <br><br>경<br><br>력<br><br></td>
+                <td colspan="5" ; style="word-spacing: 40px;">기 간</td>
+                <td colspan="4" ; style="word-spacing: 10px;">근 무 처</td>
+                <td colspan="2">직위(급)</td>
+                <td colspan="4" ; style="word-spacing: 5px;">업 무 내 용</td>
+            </tr>
+            <tr>
+                <td colspan="5">~</td>
+                <td colspan="4">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5">~</td>
+                <td colspan="4">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5">~</td>
+                <td colspan="4">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5">~</td>
+                <td colspan="4">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5">~</td>
+                <td colspan="4">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td rowspan="5" ; style="background-color: rgb(219, 230, 247); border-right-width: 3px;">
+                    <br><br>자<br>격<br>증<br><br></td>
+                <td colspan="5">취득년월일</td>
+                <td colspan="6">자 격ㆍ면 허 명</td>
+                <td colspan="4" style="word-spacing: 10px;">시 행 처</td>
+            </tr>
+            <tr>
+                <td colspan="5">&nbsp;</td>
+                <td colspan="6">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5">&nbsp;</td>
+                <td colspan="6">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+                <td colspan="6">&nbsp;</td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+                <td colspan="6"></td>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="16" rowspan="3" ; style="border-bottom-style: hidden;">본인은 아래 기재내용이 사실과 다름이 없을을 확인하며, 허위 기재
+                    사실이 발견될 경우<br>
+                    불합격 등 어떤 처분에도 일체의 이의를 제기하기 않겠습니다.
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="16" ; style="border-bottom-style: hidden; text-align: right; word-spacing: 60px;"> 년 월
+                    일&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="12" ; style="text-align: right; word-spacing: 40px;">성 명: &nbsp;</td>
+                <td colspan="4" ; style="border-left: hidden; "> <span id="cir"> 인</span></td>
+            </tr>
+
+
+
+
+
+
+
+
         </table>
-        </center>
-      </body>
+    </center>
+</body>
+
 </html>
