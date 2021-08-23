@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+  
+</head>
+<body>
+    
+<script>
+    var day;
+    var week=new Date().getDay();
+    switch(week) {
+            case 0:week
+            day = "일요일"; break;
+            case 1:week
+            day = "월요일"; break;
+            case 2:week
+            day = "화요일"; break;
+            case 3:week
+            day = "수요일"; break;
+            case 4:week
+            day = "목요일"; break;
+            case 5:week
+            day = "금요일"; break;
+            case 6:week
+            day = "토요일"; break;
+            default:
+                day="없는 요일";
+            }
+            document.write("오늘은<b>" + day + "</b>입니다. <p/>");
+</script>
+
+</body>
+</html>
